@@ -9,7 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
   <link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css">
+<link rel="stylesheet" href="./css/introjs.css">
 </head>
 
 <body>
@@ -398,9 +398,17 @@
 <script>
 document.addEventListener("DOMContentLoaded",function(){
   introJs().setOptions({
+    nextLabel:'İleri',
+    prevLabel:'Geri',
+    doneLabel:'Tamamlandı',
+
     steps:[{
       title:'TinDog Appe Hoşgeldiniz',
-      intro:'Bu alanda size TinDog App uygulmasının sayfasını anlatacağız.'
+      intro:'<a href="./documents/ornek-document.pdf" target="_blank"> Pdf e buradan ulaşabilirsin</a>',
+      
+    },
+    {
+      intro:'<video width="400" height="400" controls="controls"> <source src="./documents/ornek-video.mp4" type="video/mp4"/></video> '
     },
     {
       element : document.querySelector('#appleDownload'),
@@ -411,7 +419,7 @@ document.addEventListener("DOMContentLoaded",function(){
     {
       element : document.querySelector('#androidDownload'),
       title:'Android İndirme Bağlantısı',
-      intro: 'Uygulamayı telefonunuza indirmek için buraya tıklayabilirsiniz.'
+      intro: '<img src="./images/dog-img.jpg">'
     },
     {
       element : document.querySelector('#features'),
