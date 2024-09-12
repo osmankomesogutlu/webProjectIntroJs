@@ -400,31 +400,36 @@ document.addEventListener("DOMContentLoaded",function(){
   introJs().setOptions({
     nextLabel:'İleri',
     prevLabel:'Geri',
+    /*skipLabel:'Geç',*/
+    hidePrev:true,
+    showStepNumbers:true,
+
     doneLabel:'Tamamlandı',
 
     steps:[{
-      title:'TinDog Appe Hoşgeldiniz',
-      intro:'<a href="./documents/ornek-document.pdf" target="_blank"> Pdf e buradan ulaşabilirsin</a>',
+      title:'Modül Adı Veya İşlem Adı',
+      intro:'<a href="./documents/ornek-document.pdf" target="_blank" style="text-decoration:none"> <img src="./images/pdf-svgrepo-com.svg" height="20" width="20"> Sistem Kullanım Kılavuzuna Buradan Ulaşabilirsiniz</a>',
       
     },
     {
-      intro:'<video width="400" height="400" controls="controls"> <source src="./documents/ornek-video.mp4" type="video/mp4"/></video> '
+      title:'Video İçerik Başlığı',
+      intro:'<video width="450rem" height="auto" controls="controls"> <source src="./documents/ornek-video.mp4" type="video/mp4"/> test</video> '
     },
     {
       element : document.querySelector('#appleDownload'),
-      title:'Apple İndirme Bağlantısı',
-      intro: 'Uygulamayı iphonunuza indirmek için buraya tıklayabilirsiniz.'
+      title:'Tek Satır İçerik Başlığı',
+      intro: 'Tek satır halinde yazı, '
     }
     ,
     {
       element : document.querySelector('#androidDownload'),
-      title:'Android İndirme Bağlantısı',
-      intro: '<img src="./images/dog-img.jpg">'
+      title:'Resim Eklenmiş İçerik',
+      intro: '<img src="./images/resim1.png" width="auto" height="200rem">'
     },
     {
       element : document.querySelector('#features'),
-      title:'Uygulama Özellikleri',
-      intro: 'Uygulamayı Uygulamanın genel özellikleri.'
+      title:'Liste Yazı Paylaşımı',
+      intro: '<ol><li>Öğretmen ders planında ders numarası görüntüleme</li><li>Ödev kontrolünde öğrenci listesine geri dönüş</li><li>Bazı bildirimlerin kayıt edilmesi(tamamlandı)</li><li>Bildirim içerisinde gönderilen URL adreslerinin tıklanabilir olması<span>(tamamlandı)</span></li><li>Öğretmen öğrenci hakkında değerlendirme yazabilmesi<span>(tamamlandı)</span></li><li>Öğretmen ve Veli girilen değerlendirmeleri okuyabilmesi<span>(tamamlandı)</span></li><li>Sözleşme bilgilerinin veli tarafından takip edilebilir olması<span>(tamamlandı)</span></li><li>Yoklama sonuçlarının veli tarafından görüntülenebilmesi<span>(tamamlandı)</span></li></ol>'
     },
     {
       element : document.querySelector('#easyToUse'),
